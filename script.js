@@ -2,193 +2,10 @@
 If you choose to create your own arrays with elements, just make sure that some
 of the properties make sense to filter on, and some to sort on.*/
 
-const books = [
-  {
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-    year: 1925,
-    genre: 'Fiction',
-    rating: 4.2,
-    description:
-      'A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.',
-    image: './books-images/the-great-gatsby.jpg'
-  },
-  {
-    title: 'To Kill a Mockingbird',
-    author: 'Harper Lee',
-    year: 1960,
-    genre: 'Fiction',
-    rating: 4.5,
-    description:
-      'Set in the American South, this novel tackles issues of racism and injustice through the eyes of young Scout Finch.',
-    image: './books-images/to-kill-a-mockingbird.jpg'
-  },
-  {
-    title: '1984',
-    author: 'George Orwell',
-    year: 1949,
-    genre: 'Science Fiction',
-    rating: 4.4,
-    description:
-      'A dystopian classic that explores totalitarianism and the consequences of a surveillance state in a bleak future.',
-    image: './books-images/1984.jpg'
-  },
-  {
-    title: 'Pride and Prejudice',
-    author: 'Jane Austen',
-    year: 1813,
-    genre: 'Fiction',
-    rating: 4.25,
-    description:
-      'A timeless romance novel that examines societal expectations and the misunderstandings that can arise from pride and prejudice.',
-    image: './books-images/pride-and-prejudice.jpg'
-  },
-  {
-    title: 'The Catcher in the Rye',
-    author: 'J.D. Salinger',
-    year: 1951,
-    genre: 'Fiction',
-    rating: 4,
-    description:
-      'Narrated by the teenage Holden Caulfield, the novel explores themes of alienation and the search for authenticity.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Hobbit',
-    author: 'J.R.R. Tolkien',
-    year: 1937,
-    genre: 'Fantasy',
-    rating: 4.6,
-    description:
-      'A fantasy adventure novel that follows Bilbo Baggins on a quest to help a group of dwarves reclaim their homeland from a dragon.',
-    image: './books-images/the-hobbit.jpg'
-  },
-  {
-    title: "Harry Potter and the Sorcerer's Stone",
-    author: 'J.K. Rowling',
-    year: 1997,
-    genre: 'Fantasy',
-    rating: 4.7,
-    description:
-      'The first book in the beloved Harry Potter series, it introduces readers to the magical world of Hogwarts and the young wizard Harry Potter.',
-    image: "./books-images/harry-potter-and-the-sorcerer'.jpg"
-  },
-  {
-    title: 'Moby-Dick',
-    author: 'Herman Melville',
-    year: 1851,
-    genre: 'Adventure',
-    rating: 4.1,
-    description:
-      'An epic tale of obsession, revenge, and the relentless pursuit of the great white whale, Moby Dick.',
-    image: './books-images/moby-dick.jpg'
-  },
-  {
-    title: 'The Lord of the Rings: The Fellowship of the Ring',
-    author: 'J.R.R. Tolkien',
-    year: 1954,
-    genre: 'Fantasy',
-    rating: 4.55,
-    description:
-      'The first volume of the epic fantasy trilogy follows Frodo Baggins and the Fellowship on their quest to destroy the One Ring.',
-    image: './books-images/the-lord-of-the-rings.jpg'
-  },
-  {
-    title: 'The Shining',
-    author: 'Stephen King',
-    year: 1977,
-    genre: 'Horror',
-    rating: 4.3,
-    description:
-      "A psychological horror novel that tells the story of the Torrance family's terrifying experiences at the haunted Overlook Hotel.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe',
-    author: 'C.S. Lewis',
-    year: 1950,
-    genre: 'Fantasy',
-    rating: 4.15,
-    description:
-      'The first book in the Chronicles of Narnia series, it follows the adventures of children who discover the magical land of Narnia.',
-    image: './books-images/the-chronicles-of-narnia.jpg'
-  },
-  {
-    title: 'The Da Vinci Code',
-    author: 'Dan Brown',
-    year: 2003,
-    genre: 'Mystery',
-    rating: 3.8,
-    description:
-      'A gripping mystery thriller that follows Harvard symbologist Robert Langdon as he unravels the secrets of the Da Vinci Code.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Alchemist',
-    author: 'Paulo Coelho',
-    year: 1988,
-    genre: 'Fiction',
-    rating: 4.25,
-    description:
-      'A philosophical novel that tells the story of Santiago, a shepherd boy, on his quest to discover his personal legend.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    year: 2008,
-    genre: 'Science Fiction',
-    rating: 4.3,
-    description:
-      "In a dystopian future, Katniss Everdeen becomes a symbol of rebellion when she volunteers to take her sister's place in the brutal Hunger Games.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Girl with the Dragon Tattoo',
-    author: 'Stieg Larsson',
-    year: 2005,
-    genre: 'Mystery',
-    rating: 4.1,
-    description:
-      'A gripping mystery novel featuring investigative journalist Mikael Blomkvist and the enigmatic hacker Lisbeth Salander.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Road',
-    author: 'Cormac McCarthy',
-    year: 2006,
-    genre: 'Dystopian',
-    rating: 4,
-    description:
-      "Set in a post-apocalyptic world, it follows a father and son's harrowing journey to survive and find safety.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: "The Hitchhiker's Guide to the Galaxy",
-    author: 'Douglas Adams',
-    year: 1979,
-    genre: 'Science Fiction',
-    rating: 4.35,
-    description:
-      "A comedic science fiction series that follows the misadventures of Arthur Dent after Earth's destruction.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Giver',
-    author: 'Lois Lowry',
-    year: 1993,
-    genre: 'Dystopian',
-    rating: 4.12,
-    description:
-      'A dystopian novel set in a seemingly perfect society where young Jonas discovers the dark truth beneath the surface.',
-    image: './books-images/unknown.jpg'
-  }
-]
-
 const recipes = [
   {
     name: 'Individual vegetarian lasagnes',
-    cuisineType: ['italian'],
+    cuisineType: 'vegetarian',
     ingredients: [
       '1.2 kg cherry tomatoes',
       '5 sprigs of fresh thyme',
@@ -212,7 +29,7 @@ const recipes = [
   },
   {
     name: 'Vegetarian Stir-Fried Garlic Scape',
-    cuisineType: ['Balanced'],
+    cuisineType: 'vegetarian',
     ingredients: [
       '8 oz. garlic scapes',
       '3 oz. baby corn',
@@ -235,7 +52,7 @@ const recipes = [
   },
   {
     name: 'Cheat’s cheesy focaccia',
-    cuisineType: ['Italian'],
+    cuisineType: 'vegetarian',
     ingredients: [
       '500g pack bread mix',
       '2 tbsp olive oil , plus a little extra for drizzling',
@@ -249,7 +66,7 @@ const recipes = [
   },
   {
     name: "Vegetarian Shepherd's Pie",
-    cuisineType: ['Balanced', 'High-Fiber'],
+    cuisineType: 'vegetarian',
     ingredients: [
       '2 tablespoons extra-virgin olive oil',
       '1 large onion, finely diced',
@@ -274,7 +91,7 @@ const recipes = [
   },
   {
     name: 'Chicken Paprikash',
-    cuisineType: ['Low-Carb'],
+    cuisineType: 'meat',
     ingredients: [
       '640 grams chicken - drumsticks and thighs ( 3 whole chicken legs cut apart)',
       '1/2 teaspoon salt',
@@ -295,7 +112,7 @@ const recipes = [
   },
   {
     name: 'Baked Chicken',
-    cuisineType: ['american'],
+    cuisineType: 'meat',
     ingredients: [
       '6 bone-in chicken breast halves, or 6 chicken thighs and wings, skin-on',
       '1/2 teaspoon coarse salt',
@@ -309,7 +126,7 @@ const recipes = [
   },
   {
     name: 'Deep Fried Fish Bones',
-    cuisineType: ['south east asian'],
+    cuisineType: 'fish',
     ingredients: ['8 small whiting fish or smelt', '4 cups vegetable oil'],
     source: 'Serious Eats',
     totalTime: 31,
@@ -318,7 +135,7 @@ const recipes = [
   },
   {
     name: 'Burnt-Scallion Fish',
-    cuisineType: ['chinese'],
+    cuisineType: 'fish',
     ingredients: [
       '2 bunches scallions',
       '8 tbsp. butter',
@@ -331,7 +148,7 @@ const recipes = [
   },
   {
     name: 'Curry-Crusted Fish',
-    cuisineType: ['south east asian'],
+    cuisineType: 'fish',
     ingredients: [
       '3 slices bread , about 85g/3oz in total',
       '1 lime',
@@ -345,7 +162,7 @@ const recipes = [
   },
   {
     name: 'Meat Stock',
-    cuisineType: 'american',
+    cuisineType: 'meat',
     ingredients: [
       '2.5 pounds beef marrow bones',
       '1 large onion, quartered',
@@ -367,7 +184,7 @@ const recipes = [
   },
   {
     name: 'Homemade Meat Broth',
-    cuisineType: 'american',
+    cuisineType: 'meat',
     ingredients: [
       '1 teaspoon salt',
       '1 carrot, peeled',
@@ -385,7 +202,7 @@ const recipes = [
   },
   {
     name: 'Spice-Rubbed Grilled Flap Meat (Sirloin Tip) Recipe',
-    cuisineType: 'south-american',
+    cuisineType: 'meat',
     ingredients: [
       '1 tablespoon whole black peppercorns, toasted',
       '1 teaspoon coriander seed, toasted',
@@ -404,3 +221,125 @@ const recipes = [
     image: './recipe-images/grilled.jpg'
   }
 ]
+const faveRecipes = [];
+
+const container = document.getElementById("container");
+const favorites = document.getElementById("favorites");
+const filterDropdown = document.getElementById("filterDropdown");
+
+const loadRecipes = (recipesArray) => {
+  container.innerHTML = "";
+  const recipeIngredients = document.getElementById("recipeIngredients");
+  recipeIngredients.innerHTML = "";
+
+  recipesArray.forEach((recipe) => {
+    container.innerHTML += `
+      <div class="card">
+        <p>${recipe.name}</p>
+        <img src="${recipe.image}" alt="${recipe.name}">
+      </div>`;
+
+    // Display the ingredients for each recipe
+    recipeIngredients.innerHTML += `<h3>${recipe.name} Ingredients:</h3>`;
+    recipe.ingredients.forEach((ingredient, index) => {
+      recipeIngredients.innerHTML += `<p>${index + 1}. ${ingredient}</p>`;
+    });
+  });
+};
+
+// Function to filter and display recipes based on cuisineType
+function filterRecipes() {
+  const filterDropdown = document.getElementById("filterDropdown");
+  const value = filterDropdown.value.toLowerCase();
+
+  if (value === "all") {
+    // Load all recipes if "All" is selected
+    loadRecipes(recipes);
+  } else {
+    // Filter recipes based on cuisineType
+    const filteredList = recipes.filter((recipe) =>
+      recipe.cuisineType.toLowerCase() === value
+    );
+
+    // Load the filtered recipes
+    loadRecipes(filteredList);
+  }
+}
+
+// Function to search for recipes based on keywords
+function searchRecipes() {
+  const searchInput = document.getElementById("searchInput");
+  const searchTerm = searchInput.value.toLowerCase();
+
+  // Filter recipes based on the search term
+  const searchResults = recipes.filter((recipe) =>
+    recipe.name.toLowerCase().includes(searchTerm)
+  );
+
+  // Load the filtered recipes
+  loadRecipes(searchResults);
+}
+
+// Add an event listener to run the search when the user presses Enter in the search input
+document.getElementById("searchInput").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    searchRecipes();
+  }
+});
+
+// Function to search for recipes
+// Function to search for recipes
+function searchRecipes() {
+  const searchInput = document.getElementById("searchInput");
+  const searchTerm = searchInput.value.toLowerCase();
+
+  const cuisineTypes = ["meat", "fish", "vegetarian"];
+
+  if (cuisineTypes.includes(searchTerm)) {
+    // Filter recipes based on the selected cuisineType
+    const matchingRecipes = recipes.filter(
+      (recipe) => recipe.cuisineType.toLowerCase() === searchTerm
+    );
+
+    if (matchingRecipes.length === 0) {
+      // No matching recipes found for the selected cuisineType
+      alert("No recipes found for '" + searchTerm + "'.");
+    } else {
+      // Display the matching recipes and their ingredients
+      loadRecipes(matchingRecipes);
+      matchingRecipes.forEach((recipe) => {
+        displayIngredients(recipe); // Display the ingredients
+      });
+    }
+  } else {
+    // Search for recipes based on keywords
+    const searchResults = recipes.filter((recipe) =>
+      recipe.name.toLowerCase().includes(searchTerm)
+    );
+
+    if (searchResults.length === 0) {
+      // No matching recipes found for the search term
+      alert("No recipes found for " + searchTerm + ".");
+    } else {
+      // Display the matching recipes
+      loadRecipes(searchResults);
+    }
+  }
+}
+
+// Function to sort recipes by totalTime in ascending order
+
+function sortRecipesByTime() {
+  const sortedRecipes = getRecipesSortedByTime();
+
+  // Load the sorted recipes
+  loadRecipes(sortedRecipes);
+}
+
+// Function to get recipes sorted by totalTime
+function getRecipesSortedByTime() {
+  return [...recipes]
+    .filter((recipe) => recipe.totalTime !== null)
+    .sort((a, b) => a.totalTime - b.totalTime);
+}
+

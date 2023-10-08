@@ -1,0 +1,93 @@
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  #filterDropdown {
+    margin-bottom: 14px;
+  }
+  
+  #container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .card {
+    height: 500px;
+    width: 300px;
+    vertical-align: text-top;
+    background: rgb(241, 233, 219);
+    border-radius: 16px;
+    border: 2px solid rgba(145, 106, 85, 0.567);
+    margin: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    margin-top:  15px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    font-family: Arial;
+  }
+  button {
+border-radius: 20px;
+border: 2px solid rgba(145, 106, 85, 0.567);
+background-color: rgba(145, 106, 85, 0.567);
+  }
+
+  #searchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin: 0 auto; /* Centers horizontally within the container */
+    margin-top: 10px; /* Add some top margin for spacing */
+  }
+
+  #searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin: 0 auto; /* Centers horizontally within the container */
+    margin-top: 10px; /* Add some top margin for spacing */
+  }
+
+  .centered {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text within the container */
+    margin-top: 20px; /* Optional: Add margin to adjust spacing */
+  }
+  
+  .centered h3 {
+    /* Style the heading if needed */
+    font-size: 24px;
+    /* Additional styling properties */
+  }
+  
+  
+  
+  
+  
+  
