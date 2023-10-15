@@ -1,83 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-  <title>Project Library</title>
-</head>
-<body>
-  <h1>This is a Library for delicious dishes</h1>
-  <p>Let's take a look at some inspring recipes</p>
-  <input type="text" id="searchInput" placeholder="Search for recipes...">
-<button onclick="searchRecipes()" id="searchButton">Search</button>
-<div id="recipeIngredients" class="centered"></div>
-<button onclick="sortRecipesByTime()">Sort by cooking time</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>Digital Library</title>
+  </head>
 
+  <body>
+    <!-- <header> -->
+    <header>
+      <h1>Digital Library</h1>
+    </header>
 
-  <select id="filterDropdown" onchange="filterRecipes()">
-    <option value="all">ALL</option>
-    <option value="vegetarian">Vegetarian</option>
-    <option value="fish">Fish</option>
-    <option value="meat">Meat</option>
-  </select>
+    <!-- Main content -->
+    <section class="main">
+      <select id="filter-dropdown">
+        <option value="all">ALL</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Science Fiction">Science Fiction</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Dystopian">Dystopian</option>
+      </select>
 
-  <section id="container">
-    <div class="card">
-      <p>Individual vegetarian lasagnes</p>
-      <button onClick="addToFaves('Individual vegetarian lasagnes')">Add to favorites</button>
-      <img src="/project-library/recipe-images/individual-vegetarian-lasagnes.jpg" alt="Individual vegetarian lasagnes">
-    </div>
-    <div class="card">
-      <p>Vegetarian Stir-Fried Garlic Scape</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/vegetarian-stir-fried-garlic-s.jpg" alt="Vegetarian Stir-Fried Garlic Scape">
-    </div>
-    <div class="card">
-      <p>Cheat’s cheesy focaccia</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/cheat’s-cheesy-focaccia.jpg" alt="Cheat’s cheesy focaccia">
-    </div>
-    <div class="card">
-      <p>Vegetarian Shepherd's Pie</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/vegetarian-shepherd's-pie.jpg" alt="Vegetarian Shepherd's Pie">
-    </div>
-    <div class="card">
-      <p>Chicken Paprikash</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/chicken-paprikash.jpg" alt="Chicken Paprikash">
-    </div>
-    <div class="card">
-      <p>Baked Chicken</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/baked-chicken.jpg" alt="Baked Chicken">
-    </div>
-    <div class="card">
-      <p>Deep Fried Fish Bones</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/deep-fried-fish-bones.jpg" alt="Deep Fried Fish Bones">
-    </div>
-    <div class="card">
-      <p>Meat Stock</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/meat.jpg" alt="Meat Stock">
-    </div>
-    <div class="card">
-      <p>Spice-Rubbed Grilled Flap Meat (Sirloin Tip) Recipe</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/grilled.jpg" alt="Spice-Rubbed Grilled Flap Meat (Sirloin Tip) Recipe">
-    </div>
-    <div class="card">
-      <p>Spice-Rubbed Grilled Flap Meat (Sirloin Tip) Recipe</p>
-      <button onClick="addToFaves('Vegetarian Stir-Fried Garlic Scape')">Add to favorites</button>
-      <img src="/project-library/recipe-images/fish-dish.jpg" alt="Spice-Rubbed Grilled Flap Meat (Sirloin Tip) Recipe">
-    </div>
-  </section>
-  
-  <section id="favorites">
-  </section>
+      <button id="sort-button">Sort by Rating (High to Low)</button>
+      <button id="filter-21st-century-button">View 21st Century Books</button>
 
-<script src="script.js"></script>
-</body>
+      <section id="favourites">
+        <h2>My favourite books</h2>
+      </section>
+      <div id="card-container" class="book-list"></div>
+    </section>
+
+    <!-- <footer> -->
+    <footer>
+      <p>Demetria Cicek</p>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
